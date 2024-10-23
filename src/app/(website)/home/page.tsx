@@ -9,7 +9,7 @@ export default function Home() {
 					<span className="absolute left-3 right-3 top-0 h-[1px] bg-gradient-to-r from-zinc-500/0 via-zinc-400 to-zinc-500/0"></span>
 				</span>
 			</div>
-			<h1 className="max-w-7xl text-center text-8xl font-extrabold tracking-tighter text-foreground">
+			<h1 className="max-w-6xl text-center text-8xl font-extrabold tracking-tighter text-foreground">
 				Transforma tu visión en una experiencia digital inolvidable.
 			</h1>
 			<p className="max-w-4xl text-center text-lg">
