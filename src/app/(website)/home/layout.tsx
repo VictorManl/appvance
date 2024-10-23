@@ -15,7 +15,9 @@ export default function HomeLayout({
 	return (
 		<>
 			<Header />
-			<main>{children}</main>
+			<main className="mx-auto w-[calc(1400px+calc(2*24px))] px-6">
+				{children}
+			</main>
 			<Footer />
 		</>
 	)

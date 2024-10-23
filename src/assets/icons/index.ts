@@ -1,4 +1,5 @@
 export { default as ArrowDown } from './ArrowDown'
+export { default as Chat } from './Chat'
 export { default as Dashboard } from './Dashboard'
 export { default as Design } from './Design'
 export { default as Mobile } from './Mobile'
