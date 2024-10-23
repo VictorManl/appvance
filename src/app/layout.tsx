@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { geist, spaceGrotesk } from '@/assets/fonts'
+import { ThemeProvider } from '@/provider'
 
 import type { Metadata } from 'next'
 
@@ -15,11 +16,11 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="es">
+		<html lang="es" suppressHydrationWarning>
 			<body
-				className={`${geist.variable} ${spaceGrotesk.variable} w-full font-geist antialiased`}
+				className={`${geist.variable} ${spaceGrotesk.variable} bg-background text-foreground-light w-full font-geist antialiased`}
 			>
-				{children}
+				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>
 	)
