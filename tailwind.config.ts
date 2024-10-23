@@ -7,7 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        geist: "var(--font-geist)",
+        "space-grotesk": "var(--font-space-grotesk)",
+      },
+    },
   },
   plugins: [],
 };

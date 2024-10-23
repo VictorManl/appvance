@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import { geist, spaceGrotesk } from "@/assets/fonts";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={` antialiased`}>{children}</body>
+    <html lang="es">
+      <body
+        className={`${geist.variable} ${spaceGrotesk.variable} font-geist w-full antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
