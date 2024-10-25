@@ -14,8 +14,8 @@ export default function FAQSection() {
 	return (
 		<section className="relative mx-auto flex h-fit w-full flex-col p-4 lg:flex-row">
 			<div className="sticky left-0 top-20 h-fit w-full flex-1">
-				<p className="border-border mb-2 inline-flex w-fit items-center gap-2 rounded-full border bg-white px-3.5 py-1 font-space-grotesk text-sm font-semibold text-foreground">
-					<span className="block size-2 rounded-full bg-sky-500"></span>
+				<p className="border-border mb-2 inline-flex w-fit items-center gap-2 rounded-full border bg-white px-4 py-1 font-space-grotesk text-sm font-semibold text-foreground">
+					<span className="block size-1.5 rounded-full bg-sky-500"></span>
 					FAQs
 				</p>
 				<h2 className="mb-4 text-start text-5xl font-bold tracking-tight text-foreground">
