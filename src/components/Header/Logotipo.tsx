@@ -9,7 +9,7 @@ export default function Logotipo() {
 			<p className="flex size-9 items-center justify-center rounded-lg bg-black font-semibold text-white">
 				Av
 			</p>
-			<span className="text-foreground text-2xl font-bold tracking-tight">
+			<span className="text-2xl font-bold tracking-tight text-foreground">
 				Appvance
 			</span>
 		</Link>

@@ -12,26 +12,38 @@ export default function FAQSection() {
 		setActiveIndex(activeIndex === index ? null : index)
 	}
 	return (
-		<section className="mx-auto w-full max-w-4xl p-4">
-			<h2 className="mb-4 text-center text-7xl font-bold tracking-tight text-foreground">
-				Preguntas Frecuentes
-			</h2>
-			<p className="mx-auto my-6 max-w-2xl text-center text-base">
-				Estamos aquí para ayudarte con cualquier pregunta que puedas tener. Si
-				no encuentra lo que necesita, por favor contáctenos en
-			</p>
-			<div className="mx-auto w-full max-w-3xl space-y-4">
+		<section className="relative mx-auto flex h-fit w-full flex-col p-4 lg:flex-row">
+			<div className="sticky left-0 top-20 h-fit w-full flex-1">
+				<p className="border-border mb-2 inline-flex w-fit items-center gap-2 rounded-full border bg-white px-3.5 py-1 font-space-grotesk text-sm font-semibold text-foreground">
+					<span className="block size-2 rounded-full bg-sky-500"></span>
+					FAQs
+				</p>
+				<h2 className="mb-4 text-start text-5xl font-bold tracking-tight text-foreground">
+					Preguntas Frecuentes
+				</h2>
+				<p className="my-4 max-w-lg text-start text-base">
+					Estamos aquí para ayudarte con cualquier pregunta que puedas tener. Si
+					no encuentra lo que necesita, por favor contáctenos en <br />
+					<a
+						href="mailto:victormel2003@gmail.com"
+						className="font-space-grotesk font-semibold text-foreground underline"
+					>
+						suppor@appvance.com
+					</a>
+				</p>
+			</div>
+			<div className="mx-auto max-w-3xl flex-1 space-y-5">
 				{FAQquiestions.map((item, index) => (
 					<div
 						key={index}
-						className="cursor-pointer rounded-xl border border-gray-300 bg-white p-4 shadow-[2px_2px_2px_#a1a1a1]"
+						className="cursor-pointer rounded-xl border border-gray-300 bg-white px-4 py-6 shadow-[2px_2px_2px_#a1a1a1]"
 						onClick={() => toggleCollapse(index)}
 					>
 						<div className="flex items-center gap-4">
 							<ArrowDown
 								className={`size-6 ${activeIndex === index ? 'rotate-180' : 'rotate-0'} transition duration-100 ease-linear`}
 							/>
-							<h3 className="text-lg font-semibold text-black">
+							<h3 className="font-space-grotesk text-lg font-semibold text-black">
 								{item.question}
 							</h3>
 						</div>
@@ -73,9 +85,9 @@ const TextGeneratareEffect = ({
 				filter: filter ? 'blur(0)' : 'none',
 			},
 			{
-				duration: 0.2,
-				delay: stagger(0.03),
-				ease: 'backInOut',
+				duration: 0.3,
+				delay: stagger(0.04),
+				ease: 'easeIn',
 			}
 		)
 	}, [scope.current])
@@ -125,6 +137,11 @@ const FAQquiestions = [
 	},
 	{
 		question: '¿Cómo puedo contactar a Appvance?',
+		answer:
+			'Puede contactar a Appvance por correo electrónico en support@appvance.com',
+	},
+	{
+		question: '¿Cómo puedo agender una cita ?',
 		answer:
 			'Puede contactar a Appvance por correo electrónico en support@appvance.com',
 	},

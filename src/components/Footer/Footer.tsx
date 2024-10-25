@@ -182,7 +182,7 @@ export default function Footer() {
 					</ul>
 				</div>
 			</div>
-			<p className="inset-x-0 mt-14 bg-gradient-to-b from-neutral-200 to-neutral-300 bg-clip-text text-center text-5xl font-bold text-transparent md:text-9xl lg:text-[12rem] xl:text-[13rem]">
+			<p className="inset-x-0 mt-14 bg-gradient-to-b from-neutral-200 to-neutral-300 bg-clip-text text-center font-space-grotesk text-5xl font-bold tracking-wide text-transparent md:text-9xl lg:text-[12rem] xl:text-[13rem]">
 				Appvance
 			</p>
 		</footer>
